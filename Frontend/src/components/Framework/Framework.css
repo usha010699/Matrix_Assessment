@@ -1,0 +1,125 @@
+.framework {
+  min-height: 100vh;
+
+  padding: 100px;
+
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.framework-header {
+  text-align: center;
+
+  margin-bottom: 80px;
+}
+
+.framework-header span {
+  font-size: 14px;
+
+  letter-spacing: 3px;
+
+  color: #9e9e9e;
+
+  text-transform: uppercase;
+}
+
+.framework-header h2 {
+  margin-top: 20px;
+
+  font-size: 48px;
+
+  line-height: 1.2;
+}
+
+.framework-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.framework-card {
+  position: relative;
+
+  padding: 40px 30px;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
+
+  overflow: hidden;
+  
+}
+
+.framework-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.step-number {
+  font-size: 48px;
+
+  font-weight: 700;
+
+  color: rgba(255, 255, 255, 0.15);
+
+  margin-bottom: 20px;
+}
+
+.framework-card h3 {
+  font-size: 24px;
+
+  margin-bottom: 15px;
+}
+
+.framework-card p {
+  color: #c5c5c5;
+
+  line-height: 1.8;
+}
+
+.framework-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  height: 4px;
+
+  background: aquamarine;
+
+  transform: scaleX(0);
+
+  transition: transform 0.3s ease;
+}
+
+.framework-card:hover::before {
+  transform: scaleX(1);
+}
+.framework-card:hover p,.step-number{
+    color:aquamarine
+}
+.framework-card:hover h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+}
+
+.step-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
