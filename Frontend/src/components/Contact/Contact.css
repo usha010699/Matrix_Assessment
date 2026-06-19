@@ -2,7 +2,9 @@
   padding: 80px 20px;
   background: #0f0f0f;
   color: white;
-   background: url("../../assets/3780749_77848.jpg") center/cover no-repeat;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../../assets/3780749_77848.jpg");  
 }
 
 .contact-title {
@@ -80,7 +82,7 @@
 
 .contact-form button {
   padding: 12px;
-  background: #ffffff;
+  background: aquamarine;
   color: #000;
   border: none;
   cursor: pointer;

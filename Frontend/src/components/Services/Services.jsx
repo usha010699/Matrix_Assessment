@@ -29,9 +29,19 @@ const services = [
 
 function Services() {
   return (
-    <section className="services"  
-     style={{ backgroundImage: `url(${serviceBg})`}}
-     id="services">
+    <section
+      className="services"
+      style={{
+        backgroundImage: `
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(${serviceBg})
+    `,
+      }}
+      id="services"
+    >
 
       {/* <div className="section-header">
         <span>SERVICES</span>
@@ -41,7 +51,7 @@ function Services() {
           Sustainable Value
         </h2>
       </div> */}
-    
+
       <div className="services-grid">
         {services.map((service) => (
           <div className="service-card" key={service.id}>
@@ -50,7 +60,7 @@ function Services() {
             </span> */}
 
             <h3>{service.title}</h3>
-              
+
             <p>{service.description}</p>
           </div>
         ))}

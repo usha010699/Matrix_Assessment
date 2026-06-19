@@ -8,73 +8,73 @@ import img4 from "../../assets/13.jpg"
 
 function Framework() {
   const frameworkSteps = [
-  {
-    id: "01",
-    title: "Assess",
-     image: img1,
-    description:
-      "Evaluate operational challenges, risks, and opportunities."
-  },
-  {
-    id: "02",
-    title: "Analyze",
-     image: img2,
-    description:
-      "Transform findings into actionable intelligence."
-  },
-  {
-    id: "03",
-    title: "Optimize",
-     image: img3,
-    description:
-      "Implement strategies that improve performance."
-  },
-  {
-    id: "04",
-    title: "Generate Value",
-     image: img4,
-    description:
-      "Deliver measurable outcomes and sustainable growth."
-  }
-];
+    {
+      id: "01",
+      title: "Assess",
+      image: img1,
+      description:
+        "Evaluate operational challenges, risks, and opportunities."
+    },
+    {
+      id: "02",
+      title: "Analyze",
+      image: img2,
+      description:
+        "Transform findings into actionable intelligence."
+    },
+    {
+      id: "03",
+      title: "Optimize",
+      image: img3,
+      description:
+        "Implement strategies that improve performance."
+    },
+    {
+      id: "04",
+      title: "Generate Value",
+      image: img4,
+      description:
+        "Deliver measurable outcomes and sustainable growth."
+    }
+  ];
   return (
     <div>
       <section className="framework"
-      style={{ backgroundImage: `url(${serviceBg})`}}>
+        style={{
+          backgroundImage: `
+           linear-gradient(
+             rgba(0, 0, 0, 0.5),
+             rgba(0, 0, 0, 0.5)
+           ),
+           url(${serviceBg})
+         `,
+        }}>
 
-  {/* <div className="framework-header"> */}
-
-    {/* <span>VALUE GENERATION FRAMEWORK</span>
-
-    <h5>
-      A Structured Approach To
-      Sustainable Business Value
-    </h5> */}
-{/* 
-  </div> */}
+      
+ 
 
   <div className="framework-grid">
 
-    {frameworkSteps.map((step) => (
-      <div className="framework-card" key={step.id} >
+        {frameworkSteps.map((step) => (
+          <div className="framework-card" key={step.id} >
 
-        <div className="step-number">
-          {step.id}
-        </div>
+            <div className="step-number">
+              {step.id}
+            </div>
 
-         <img className="step-image" src={step.image} alt={step.title} />
+            <img className="step-image" src={step.image} alt={step.title} />
 
-        <h3>{step.title}</h3>
+            <h3>{step.title}</h3>
 
-        <p>{step.description}</p>
+            <p>{step.description}</p>
+
+          </div>
+        ))}
 
       </div>
-    ))}
 
-  </div>
-
-</section>
-    </div>
+    </section>
+    </div >
   )
 }
 
